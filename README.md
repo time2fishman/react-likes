@@ -1,68 +1,57 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-## Available Scripts
+# React Likes
 
-In the project directory, you can run:
+Create a likes component in React. Your final product should function similarly to
+[this deployed version](http://scary-religion.surge.sh/) of the component.
 
-### `yarn start`
+## Prerequisites
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- Components
+- State and props
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Instructions
 
-### `yarn test`
+1. Fork and clone this repository.
+1. Change into the new directory.
+1. Install dependencies.
+1. Fulfill the listed requirements.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Please turn in your submission by the deadline on your cohort calendar.
 
-### `yarn build`
+## Requirements
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a new component called **Likes** in the `src` directory and add functionality to it so that when the render component it records the number of clicks in state and displays the total clicks.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Steps to Take
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Use the `useState` hook to add state called `totalLikes` to the component to store the current number of clicks on the component.
+1. Initialize the `totalLikes` state as `0`.
+1. In your JSX, render a `button` element with it's text set to the value of `totalLikes`
+1. Include an `onClick` attribute on the start button which calls a function that increments the value of `totalLikes`
 
-### `yarn eject`
+## Bonus / Homework
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Change the increment button to have a `+` as its text.
+1. Add another button that decrements the `totalLikes` and has a `-` as its text.
+1. Render the `totalLikes` to the page in a `p` element.
+1. Once you have the `totalLikes` displaying on the page, move just the display paragraph into its own component called **LikeTotal** and have the Likes component you built render it (hint: use props to pass the value of `totalLikes` to your new LikeTotal component).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Resources
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Components and Props](https://facebook.github.io/react/docs/components-and-props.html)
+- [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+- [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Plagiarism
 
-## Learn More
+Take a moment to refamiliarize yourself with the
+[Plagiarism policy](https://git.generalassemb.ly/DC-WDI/Administrative/blob/master/plagiarism.md).
+Plagiarized work will not be accepted.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## [License](LICENSE)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.
