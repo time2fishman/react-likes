@@ -15,7 +15,8 @@ Create a likes component in React. Your final product should function similarly 
 
 1. Fork and clone this repository.
 1. Change into the new directory.
-1. Install dependencies.
+1. Install dependencies with `npm i`.
+1. Switch to a new `dev` branch.
 1. Fulfill the listed requirements.
 
 Please turn in your submission by the deadline on your cohort calendar.
@@ -32,12 +33,15 @@ Create a new component called **Likes** in the `src` directory and add functiona
 1. Include an `onClick` attribute on the start button which calls a function that increments the value of `totalLikes`.
 1. Make a commit with a message that reads "Add MVP functionality"!
 
-## Bonus / Homework
+## Homework / Bonus
 
 1. Change the increment button to have a `+` as its text.
 1. Add another button that decrements the `totalLikes` and has a `-` as its text.
 1. Render the `totalLikes` to the page in a `p` element.
 1. Once you have the `totalLikes` displaying on the page, move just the display paragraph into its own component called **LikeTotal** and have the Likes component you built render it (hint: use props to pass the value of `totalLikes` to your new LikeTotal component).
+1. Make another commit with a message that reads "Add decrement button".
+1. Make it so that the `totalLikes` can never display a value less than `0`.
+1. Add and commit your final changes, push them and open a pull request!
 
 ## Resources
 
