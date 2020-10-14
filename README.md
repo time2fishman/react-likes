@@ -3,7 +3,7 @@
 # React Likes
 
 Create a likes component in React. Your final product should function similarly to
-[this deployed version](http://scary-religion.surge.sh/) of the component.
+[this deployed version](https://react-likes.surge.sh/) of the component.
 
 ## Prerequisites
 
@@ -28,8 +28,9 @@ Create a new component called **Likes** in the `src` directory and add functiona
 
 1. Use the `useState` hook to add state called `totalLikes` to the component to store the current number of clicks on the component.
 1. Initialize the `totalLikes` state as `0`.
-1. In your JSX, render a `button` element with it's text set to the value of `totalLikes`
-1. Include an `onClick` attribute on the start button which calls a function that increments the value of `totalLikes`
+1. In your JSX, render a `button` element with it's text set to the value of `totalLikes`.
+1. Include an `onClick` attribute on the start button which calls a function that increments the value of `totalLikes`.
+1. Make a commit with a message that reads "Add MVP functionality"!
 
 ## Bonus / Homework
 
