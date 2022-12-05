@@ -4,6 +4,12 @@
   text-align: center;
 }
 
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 button {
   background-color: lightgray;
   border: 1px solid;
@@ -13,16 +19,17 @@ button {
   width: 3rem;
 }
 
-button + button {
-  margin-left: 0.5rem;
+.decrement-button{
+  background-color: red;
+  border-color: rgb(110, 2, 2);
 }
 
-.increment {
+.total-likes {
+  margin: 0px 10px 0px 10px
+}
+
+.increment-button {
   background-color: green;
   border-color: rgb(0, 69, 0);
 }
 
-.decrement {
-  background-color: red;
-  border-color: rgb(110, 2, 2);
-}
