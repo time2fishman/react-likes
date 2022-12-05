@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+import LikeTotal from './LikeTotal';
 
 const Likes = () => {
     const [totalLikes, setTotalLikes] = useState(0)
-    console.log(totalLikes);
+    // console.log(totalLikes);
 
     return (
         <div>
-            <button onClick={() => setTotalLikes(totalLikes + 1)}>{totalLikes}
-            </button>
+            <LikeTotal totalLikes={totalLikes} setTotalLikes={setTotalLikes} />
         </div>
     );
 };
