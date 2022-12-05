@@ -6,9 +6,9 @@ const Likes = () => {
     // console.log(totalLikes);
 
     return (
-        <div>
+        // <div>
             <LikeTotal totalLikes={totalLikes} setTotalLikes={setTotalLikes} />
-        </div>
+        // </div>
     );
 };
 
