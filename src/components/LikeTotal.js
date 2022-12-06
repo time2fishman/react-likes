@@ -1,5 +1,5 @@
-const LikeTotal = (props) => {
-    return <p>Total: {props.sum}</p>
+const LikeTotal = ({ sum }) => {
+    return <p>Total: {sum}</p>
 };
 
 export default LikeTotal;

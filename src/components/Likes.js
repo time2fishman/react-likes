@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
-const Likes = (props) => {
+const Likes = ({ increment, setSum }) => {
     const [likes, setLikes] = useState(0)
 
     const incrementLikes = () => {
-        setLikes((prev) => prev + props.increment)
-        props.setSum((prev) => prev + props.increment)
+        setLikes((prev) => prev + increment)
+        setSum((prev) => prev + increment)
     }
 
     const decrementLikes = () => {
-        setLikes((prev) => prev >= 1 ? prev - props.increment : 0)
-        props.setSum((prev) => (likes >= 1) ? prev - props.increment : prev)
+        setLikes((prev) => prev >= 1 ? prev - increment : 0)
+        setSum((prev) => (likes >= 1) ? prev - increment : prev)
 
     }
     return (
