@@ -1,13 +1,27 @@
 import React, { useState } from 'react';
-import LikeTotal from './LikeTotal';
 
-const Likes = () => {
-    const [totalLikes, setTotalLikes] = useState(0)
-    const [totalLikes3, setTotalLikes3] = useState(0)
+const Likes = (props) => {
+    const [likes, setLikes] = useState(0)
 
+    const incrementLikes = () => {
+        setLikes((prev) => prev + props.increment)
+        props.setSum((prev) => prev + props.increment)
+    }
+
+    const decrementLikes = () => {
+        setLikes((prev) => prev >= 1 ? prev - props.increment : 0)
+        props.setSum((prev) => (likes >= 1) ? prev - props.increment : prev)
+
+    }
     return (
-        <div>
-            <LikeTotal totalLikes={totalLikes} setTotalLikes={setTotalLikes} totalLikes3={totalLikes3} setTotalLikes3={setTotalLikes3} />
+        <div className='counter-container'>
+            <button className='decrement-button' onClick={decrementLikes}>
+                -
+            </button>
+            <p className='total-likes'>{likes}</p>
+            <button className='increment-button' onClick={incrementLikes}>
+                +
+            </button>
         </div>
     );
 };
